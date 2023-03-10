@@ -15,8 +15,13 @@ public class PersonController : Controller
     }
     
     [HttpPost("person")]
-    public async Task AddPerson(Person person)
+    public async Task AddPerson([FromBody] string name)
     {
-        await _dbContext.Persons.AddAsync(person);
+        await _dbContext.Persons.AddAsync(new Person
+        {
+            FirstName = name
+        });
+        await _dbContext.SaveChangesAsync();
+
     }
 }
