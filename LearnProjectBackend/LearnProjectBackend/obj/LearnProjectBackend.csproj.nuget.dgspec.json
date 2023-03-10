@@ -1,34 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyProjects\\learnreact\\LearnProjectBackend\\LearnProjectBackend\\LearnProjectBackend.csproj": {}
+    "D:\\TestProjects\\learnreact\\LearnProjectBackend\\LearnProjectBackend\\LearnProjectBackend.csproj": {}
   },
   "projects": {
-    "D:\\MyProjects\\learnreact\\LearnProjectBackend\\LearnProjectBackend\\LearnProjectBackend.csproj": {
+    "D:\\TestProjects\\learnreact\\LearnProjectBackend\\LearnProjectBackend\\LearnProjectBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProjects\\learnreact\\LearnProjectBackend\\LearnProjectBackend\\LearnProjectBackend.csproj",
+        "projectUniqueName": "D:\\TestProjects\\learnreact\\LearnProjectBackend\\LearnProjectBackend\\LearnProjectBackend.csproj",
         "projectName": "LearnProjectBackend",
-        "projectPath": "D:\\MyProjects\\learnreact\\LearnProjectBackend\\LearnProjectBackend\\LearnProjectBackend.csproj",
-        "packagesPath": "C:\\Users\\thedr\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProjects\\learnreact\\LearnProjectBackend\\LearnProjectBackend\\obj\\",
+        "projectPath": "D:\\TestProjects\\learnreact\\LearnProjectBackend\\LearnProjectBackend\\LearnProjectBackend.csproj",
+        "packagesPath": "C:\\Users\\jeck1\\.nuget\\packages\\",
+        "outputPath": "D:\\TestProjects\\learnreact\\LearnProjectBackend\\LearnProjectBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+          "E:\\Visual Studio Packages\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\thedr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jeck1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://10.40.10.33/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

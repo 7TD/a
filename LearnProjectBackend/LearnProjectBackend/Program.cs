@@ -5,7 +5,9 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddControllers();
 
+builder.Services.AddSwaggerGen();
 
 builder.Services.AddAutoMapper(typeof(EndpointProfile));
 
@@ -13,8 +15,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("AppDbContext"));
 });
-
-builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
