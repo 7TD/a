@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="191db5da-a1bf-4dd8-991e-1b2f206d65b0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/LearnProjectBackend/Controllers/PersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LearnProjectBackend/Controllers/PersonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LearnProjectBackend/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LearnProjectBackend/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../learnProjectFrontend/src/components/PostGet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../learnProjectFrontend/src/components/PostGet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LearnProjectBackend/obj/Debug/net7.0/LearnProjectBackend.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LearnProjectBackend/obj/Debug/net7.0/LearnProjectBackend.AssemblyInfo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +95,7 @@
       <workItem from="1678528609022" duration="8606000" />
       <workItem from="1678610781820" duration="7651000" />
       <workItem from="1678705702896" duration="5266000" />
-      <workItem from="1678724087566" duration="3988000" />
+      <workItem from="1678724087566" duration="4691000" />
     </task>
     <servers />
   </component>
