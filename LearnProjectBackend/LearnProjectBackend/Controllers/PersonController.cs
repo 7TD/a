@@ -1,5 +1,6 @@
 ﻿using LearnProjectBackend.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LearnProjectBackend.Controllers;
 
@@ -22,6 +23,30 @@ public class PersonController : Controller
             FirstName = name
         });
         await _dbContext.SaveChangesAsync();
+    }
 
+    [HttpGet("{id}")]
+    public async Task<Person?> GetPerson(int id)
+    {
+        var item = await _dbContext.Persons.FirstOrDefaultAsync(p=> p.Id == id);
+
+        return item;
+    }
+
+    [HttpGet]
+    public async Task<List<Person>> GetAllPersons()
+    {
+        return await _dbContext.Persons.Select(x => x).ToListAsync();
+    }
+
+    [HttpDelete("{id}")]
+    public async Task DeletePersons(int id)
+    {
+        var item = await _dbContext.Persons.FirstOrDefaultAsync(p => p.Id == id);
+        if (item == null) return;
+
+        _dbContext.Persons.Remove(item);
+        await _dbContext.SaveChangesAsync();
     }
 }
+

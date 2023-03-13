@@ -22,6 +22,11 @@ app.UseRouting();
 
 app.UseStaticFiles();
 
+app.UseCors(options =>
+{
+    options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+});
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
