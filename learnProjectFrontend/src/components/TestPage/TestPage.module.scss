@@ -1,15 +1,17 @@
-.BtnGreen {
-  background-color: #4DAF5C;
-}
-.BtnRed {
-  background-color: #DA4D2E;
-}
-.BtnBlue {
-  background-color: #5B81E2;
-}
+
+
 .dd {
   background-color: #353535;
   height: 100vh;
+  .BtnGreen {
+    background-color: #4DAF5C;
+  }
+  .BtnRed {
+    background-color: #DA4D2E;
+  }
+  .BtnBlue {
+    background-color: #5B81E2;
+  }
 }
 .bg {
   position: absolute;

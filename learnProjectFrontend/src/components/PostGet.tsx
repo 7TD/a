@@ -17,10 +17,10 @@ function PostGet() {
     };
 
     const onAddPerson = () => {
-        axios.post('https://localhost:44392/api/Person/person', FirstName);
+        axios.post('https://localhost:7095/api/Person/person', FirstName);
     }
     const onGetPersons = () => {
-        axios.get(`https://localhost:44392/api/Person/${Id}`).then((res) => {
+        axios.get(`https://localhost:7095/api/Person/${Id}`).then((res) => {
             setItem(res.data);
         })
         console.log(item);
@@ -28,10 +28,10 @@ function PostGet() {
         console.log(item.id);
     }
     const onDeletePerson = () => {
-        axios.delete(`https://localhost:44392/api/Person/${Id}`);
+        axios.delete(`https://localhost:7095/api/Person/${Id}`);
     }
     const onGetAllPersons = () => {
-        axios.get('https://localhost:44392/api/Person').then((res) => {
+        axios.get('https://localhost:7095/api/Person').then((res) => {
             setItems(res.data);
         })
     }

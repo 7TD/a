@@ -7,7 +7,7 @@ import './App.scss';
 function App() {
   return (
       <div>
-          <TestPage />
+          <PostGet />
       </div>
   );
 }
