@@ -1,0 +1,40 @@
+.BtnGreen {
+  background-color: #4DAF5C;
+}
+.BtnRed {
+  background-color: #DA4D2E;
+}
+.BtnBlue {
+  background-color: #5B81E2;
+}
+.dd {
+  background-color: #353535;
+  height: 100vh;
+}
+.bg {
+  position: absolute;
+  display: flex;
+  max-width: 1270px;
+  background-color: #ccc;
+  margin: 60px auto;
+  border-radius: 0 35px;
+  border: 6px solid #6376D8;
+}
+.Left {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 11px 40px;
+
+  }
+}
+.Right {
+  overflow: auto;
+}

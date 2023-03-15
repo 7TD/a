@@ -7,7 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="191db5da-a1bf-4dd8-991e-1b2f206d65b0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/LearnProjectBackend/obj/Debug/net7.0/LearnProjectBackend.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LearnProjectBackend/obj/Debug/net7.0/LearnProjectBackend.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LearnProjectBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LearnProjectBackend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learnProjectFrontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../learnProjectFrontend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/10.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/9.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../learnProjectFrontend/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +104,7 @@
       <workItem from="1678528609022" duration="8606000" />
       <workItem from="1678610781820" duration="7651000" />
       <workItem from="1678705702896" duration="5266000" />
-      <workItem from="1678724087566" duration="4691000" />
+      <workItem from="1678724087566" duration="5176000" />
     </task>
     <servers />
   </component>
