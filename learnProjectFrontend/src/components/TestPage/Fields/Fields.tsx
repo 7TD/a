@@ -1,14 +1,17 @@
 import styles from "./Field.module.scss";
+import React from "react";
 
-function Fields () {
+interface Props {}
+
+export const Field: React.FC<Props> = (props) => {
+
+
     return (
         <div>
             <p>id</p>
-            <div className={styles.field}></div>
+            <input className={styles.field} type="number"/>
             <p>name</p>
-            <div className={styles.field}></div>
+            <input className={styles.field} type="text"/>
         </div>
     );
-}
-
-export default Fields;
+};

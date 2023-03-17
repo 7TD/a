@@ -33,7 +33,7 @@ function PostGet() {
     const onGetAllPersons = () => {
         axios.get('https://localhost:7095/api/Person').then((res) => {
             setItems(res.data);
-        })
+        });
     }
 
     return(

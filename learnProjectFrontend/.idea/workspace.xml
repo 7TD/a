@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f470261d-dada-448d-bcdd-2edcfe714aad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/personRequest.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/IPerson.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LearnProjectBackend/.idea/.idea.LearnProjectBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnProjectBackend/.idea/.idea.LearnProjectBackend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PostGet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostGet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestPage/Fields/Field.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestPage/Fields/Field.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestPage/Fields/Fields.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestPage/Fields/Fields.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestPage/Person/Person.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestPage/Person/Person.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestPage/Person/Person.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestPage/Person/Person.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TestPage/TestPage.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestPage/TestPage.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestPage/TestPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestPage/TestPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +78,8 @@
       <workItem from="1678732203325" duration="7741000" />
       <workItem from="1678788479926" duration="7825000" />
       <workItem from="1678885074342" duration="3075000" />
+      <workItem from="1678956127072" duration="4510000" />
+      <workItem from="1679038320396" duration="11230000" />
     </task>
     <servers />
   </component>
