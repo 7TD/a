@@ -1,3 +1,5 @@
+@import "assets/variables";
+
 body {
   background-color: #353535;
 }
@@ -17,6 +19,7 @@ body {
 .bg {
   display: flex;
   justify-content: space-around;
+  //@include d-flex-u(start, space-around);
   max-width: 1270px;
   height: 95%;
   background-color: #ccc;

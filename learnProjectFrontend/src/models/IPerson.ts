@@ -1,4 +1,4 @@
 export interface IPerson {
-    id: number
-    name: string
+    id: number;
+    firstName: string;
 }

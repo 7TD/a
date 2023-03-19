@@ -1,44 +1,36 @@
 import styles from "./Person.module.scss";
-import React from "react";
+import React, {useState} from "react";
 import {IPerson} from "../../../models/IPerson";
 
 interface PersonProps {
     person: IPerson
+    setState: Function
+    state: IPerson[]
 }
 
+export const Person = ({ person, state, setState }: PersonProps) => {
+    const [isActive, setIsActive] = useState(false);
 
-export const Person = ({ person }: PersonProps) => {
-    const [isActive, setIsActive] = React.useState(false);
-
-    const onActive = () => {
+    const dell = () => {
+        if (isActive === false) {
+            setState([...state, person]);
+        }
+        if (isActive === true) {
+            setState(state.filter((fruit) => {
+                return fruit.id !== person.id;
+            }));
+        }
         setIsActive(prev => !prev);
-        console.log(isActive);
     }
 
     return (
         <div
-            onClick={onActive}
+            onClick={dell}
             className={isActive ? styles.personActive : styles.person}
         >
             <p>id: {person.id}</p>
-            <p>name: {person.name}</p>
+            <p>name: {person.firstName}</p>
         </div>
     );
 }
-
-// interface Props {
-//     id: number;
-//     name: string;
-// }
-//
-// export const Person = (props) => {
-//     const {id, name} = props;
-//
-//     return (
-//         <div className={styles.person}>
-//             <p>id: {id}</p>
-//             <p>name: {name}</p>
-//         </div>
-//     );
-// };
 

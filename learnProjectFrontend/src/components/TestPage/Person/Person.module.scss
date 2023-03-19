@@ -1,14 +1,15 @@
-.person {
+@import './assets/variables';
+
+.person, .personActive{
   width: 320px;
   height: 80px;
   box-sizing: border-box;
-  background: #708FDD;
-  border-bottom: 2px solid #000000;
+  background-color: $blueBg;
+  border-bottom: 2px solid $borderColorTestPage;
+  &:last-child {
+    border: none;
+  }
 }
 .personActive {
-  width: 320px;
-  height: 80px;
-  box-sizing: border-box;
   background: #3768de;
-  border-bottom: 2px solid #000000;
 }
