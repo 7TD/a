@@ -25,6 +25,7 @@ export const TestPage = () => {
         const response = await new PersonApi().getPersons();
         setPersons(response.data);
     }
+    
 
     React.useEffect(() => {
         fetchProducts();
