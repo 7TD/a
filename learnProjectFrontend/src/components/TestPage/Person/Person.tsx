@@ -1,11 +1,11 @@
-import styles from "./Person.module.scss";
-import React, {useState} from "react";
-import {IPerson} from "../../../models/IPerson";
+import styles from './Person.module.scss';
+import React, {useState} from 'react';
+import {PersonInfo} from '../../../models/PersonInfo';
 
 interface PersonProps {
-    person: IPerson
+    person: PersonInfo
     setState: Function
-    state: IPerson[]
+    state: PersonInfo[]
 }
 
 export const Person = ({ person, state, setState }: PersonProps) => {

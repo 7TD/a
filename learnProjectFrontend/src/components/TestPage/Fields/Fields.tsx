@@ -1,38 +1,32 @@
-import styles from "./Field.module.scss";
-import React from "react";
-import axios from "axios";
+import styles from './Field.module.scss';
+import React from 'react';
+import {PersonInfo} from '../../../models/PersonInfo';
 
 interface FieldProps {
-    idList: number[]
-    setIsAdded: Function
-    setIdList: Function
-    isGet: boolean
-    isAdded: boolean
+    index: number
+    person: PersonInfo[]
+    setPerson: Function
 }
 
-export const Field = ({ setIsAdded, setIdList, idList, isGet, isAdded }: FieldProps) => {
-    const [id, setId] = React.useState('');
-    const [FirstName, setFirstName] = React.useState('');
+export const Field = ({ index, person, setPerson }: FieldProps) => {
+    const [id ,setId] = React.useState('');
+    const [name ,setName] = React.useState('');
 
-    React.useEffect(() => {
-        if(isGet === true) {
-            setIdList([...idList, id]);
-        }
-    }, [isGet]);
-
-    React.useEffect(() => {
-        if(isAdded === true) {
-            axios.post('https://localhost:7095/api/Person/person', FirstName).then(() => console.log(FirstName));
-            setIsAdded(false);
-        }
-    }, [isAdded]);
+    const onChangeId = (event: any) => {
+        setId(event.target.value)
+        setPerson([...person.slice(0, index), {id: event.target.value, firstName: name},...person.slice(index + 1)]);
+    }
+    const onChangeName = (event: any) => {
+        setName(event.target.value)
+        setPerson([...person.slice(0, index), {id: id, firstName: event.target.value},...person.slice(index + 1)]);
+    }
 
     return (
         <div>
-            <p>id  {id}</p>
-            <input onChange={(event) => setId(event.target.value)} className={styles.field} type="number"/>
-            <p>name  {FirstName}</p>
-            <input onChange={(event) => setFirstName(event.target.value)} className={styles.field} type="text"/>
+            <p>id</p>
+            <input onChange={onChangeId} className={styles.field} type="number"/>
+            <p>name</p>
+            <input onChange={onChangeName} className={styles.field} type="text"/>
         </div>
     );
 };

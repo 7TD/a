@@ -29,7 +29,6 @@ public class PersonController : Controller
     public async Task<Person?> GetPerson(int id)
     {
         var item = await _dbContext.Persons.FirstOrDefaultAsync(p=> p.Id == id);
-
         return item;
     }
 
