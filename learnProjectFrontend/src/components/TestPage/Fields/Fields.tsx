@@ -22,10 +22,10 @@ export const Field = ({ index, person, setPerson }: FieldProps) => {
     }
 
     return (
-        <div>
-            <p>id</p>
+        <div className={styles.block}>
+            <p>Id</p>
             <input onChange={onChangeId} className={styles.field} type="number"/>
-            <p>name</p>
+            <p>Name</p>
             <input onChange={onChangeName} className={styles.field} type="text"/>
         </div>
     );

@@ -28,8 +28,8 @@ export const Person = ({ person, state, setState }: PersonProps) => {
             onClick={dell}
             className={isActive ? styles.personActive : styles.person}
         >
-            <p>id: {person.id}</p>
-            <p>name: {person.firstName}</p>
+            <p>Id: {person.id}</p>
+            <p>Name: {person.firstName}</p>
         </div>
     );
 }

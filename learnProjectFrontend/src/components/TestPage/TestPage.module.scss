@@ -26,39 +26,42 @@ body {
   margin: 2%  auto;
   border-radius: 0 35px;
   border: 6px solid #6376D8;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.71);
 }
 .Left {
   display: flex;
   flex-direction: column;
-  overflow: auto;
+  padding-top: 50px;
 
   button {
     width: 250px;
     height: 50px;
+    margin: 11px 10px;
     border: none;
     border-radius: 25px;
+    font-size: 20px;
+    transition: transform 0.2s ease-in-out;
     cursor: pointer;
-    margin: 11px 0;
-    font-size: 17px;
 
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 .Middle {
+  width: 440px;
   overflow: auto;
   background-color: #fff;
-  padding: 10px 40px;
 
   svg {
-    margin: 30px 200px;
+    display: block;
     cursor: pointer;
+    margin: 50px auto;
   }
 }
 .Right {
   overflow: auto;
-
-  p {
-    margin: 0 0 16px 10px;
-  }
+  width: 320px;
 }
 
 .Middle::-webkit-scrollbar {

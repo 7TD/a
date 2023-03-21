@@ -3,7 +3,6 @@ import {Field} from './Fields/Fields';
 import {Person} from './Person/Person';
 import {EmptyPerson} from './Person/EmptyPerson';
 import React from 'react';
-import axios from 'axios';
 import {PersonInfo} from '../../models/PersonInfo';
 import {PersonApi} from '../../api/personRequest';
 
@@ -18,48 +17,50 @@ export const TestPage = () => {
     }
 
     // Запрос данных
-
-
-    async function fetchProducts() {
+    async function getPersonById() {
         setPersons([]);
-        const response = await new PersonApi().getPersons();
+        let ids: number[] = [];
+        addPerson.map(p => ids.push(p.id));
+        const respons = await new PersonApi().getPersons(ids);
+        setPersons(respons.data);
+    }
+
+    async function getPerson() {
+        setPersons([]);
+        const response = await new PersonApi().getAllPersons();
         setPersons(response.data);
     }
-    
 
     React.useEffect(() => {
-        fetchProducts();
+        getPerson();
     }, []);
 
     // Удаление
-    const delPersons = () => {
-        dellPerson.map(person => {
-            axios.delete(`https://localhost:7095/api/Person/${person.id}`);
-            setPersons(current =>
-                current.filter(emploee => {
-                    return emploee.id !== person.id;
-                }));
-        });
-        setDellPerson(prev => []);
+    async function detelePersons() {
+        let ids: number[] =[];
+        dellPerson.map(p => ids.push(p.id));
+        await new PersonApi().deletePersons(ids);
+        console.log(ids);
+        getPerson();
     }
 
-    // Добавление
-    async function get() {
-        setPersons([]);
-        const response = await new PersonApi().getPersonById(addPerson[0].id);
-        setPersons(prev => [response.data]);
+    // // Добавление
+    async function addPersons() {
+        let names: string[] = [];
+        addPerson.map(p => names.push(p.firstName));
+        await new PersonApi().addPersons(names);
+        getPerson();
     }
-
 
     return (
         <div className={styles.dd}>
             <div className={styles.bg}>
                 <div className={styles.Left}>
-                    <button className={styles.BtnGreen}>Добавить</button>
+                    <button onClick={addPersons} className={styles.BtnGreen}>Добавить</button>
                     <button className={styles.BtnBlue}>Изменить</button>
-                    <button onClick={delPersons} className={styles.BtnRed}>Удалить</button>
-                    <button onClick={get} className={styles.BtnGreen}>Получить</button>
-                    <button onClick={fetchProducts} className={styles.BtnGreen}>Получить все</button>
+                    <button onClick={detelePersons} className={styles.BtnRed}>Удалить</button>
+                    <button onClick={getPersonById} className={styles.BtnGreen}>Получить</button>
+                    <button onClick={getPerson} className={styles.BtnGreen}>Получить все</button>
                 </div>
                 <div className={styles.Middle}>
 
@@ -71,8 +72,9 @@ export const TestPage = () => {
                             setPerson={setAddPerson}
                         />
                     ))}
+
                     {/*Демонстрация диномических управляемых инпутов (удалить)*/}
-                    {addPerson.map(person => (<p>{person.id} {person.firstName}</p>))}
+                    {/*{addPerson.map(person => (<p>Id: {person.id} Name: {person.firstName}</p>))}*/}
 
                     <svg onClick={addField} width="34" height="32" viewBox="0 0 34 32" fill="none"
                          xmlns="http://www.w3.org/2000/svg">

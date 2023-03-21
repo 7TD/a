@@ -16,30 +16,44 @@ public class PersonController : Controller
     }
     
     [HttpPost("person")]
-    public async Task AddPerson([FromBody] string name)
+    public async Task AddPerson([FromBody] string[] name)
     {
-        await _dbContext.Persons.AddAsync(new Person
+        foreach (var firstName in name)
         {
-            FirstName = name
-        });
+            await _dbContext.Persons.AddAsync(new Person
+            {
+                FirstName = firstName
+            });
+        }
         await _dbContext.SaveChangesAsync();
     }
 
-    [HttpGet("{id}")]
-    public async Task<Person?> GetPerson(int id)
-    {
-        var item = await _dbContext.Persons.FirstOrDefaultAsync(p=> p.Id == id);
-        return item;
-    }
+    [HttpPost]
+     public async Task<List<Person>> GetPersons([FromBody] int[] Ids)
+     {
+         return await _dbContext.Persons.Where(x => Ids.Contains(x.Id)).ToListAsync();
+     }
 
-    [HttpGet]
+     [HttpGet]
     public async Task<List<Person>> GetAllPersons()
     {
-        return await _dbContext.Persons.Select(x => x).ToListAsync();
+        return await _dbContext.Persons.ToListAsync();
+    }
+
+    [HttpPost("delete")]
+    public async Task DeletePersons([FromBody] int[] ids)
+    {
+        foreach (var id in ids)
+        {
+            var item = await _dbContext.Persons.FirstOrDefaultAsync(p => p.Id == id);
+            _dbContext.Persons.Remove(item);
+        }
+
+        await _dbContext.SaveChangesAsync();
     }
 
     [HttpDelete("{id}")]
-    public async Task DeletePersons(int id)
+    public async Task DeletePerson(int id)
     {
         var item = await _dbContext.Persons.FirstOrDefaultAsync(p => p.Id == id);
         if (item == null) return;
@@ -47,5 +61,14 @@ public class PersonController : Controller
         _dbContext.Persons.Remove(item);
         await _dbContext.SaveChangesAsync();
     }
+
+    // [HttpPut]
+    // public async Task PutPersons(Person[] person)
+    // {
+    //     foreach (var p in person)
+    //     {
+    //         await _dbContext.Persons.
+    //     }
+    // }
 }
 
