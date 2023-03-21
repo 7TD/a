@@ -52,23 +52,16 @@ public class PersonController : Controller
         await _dbContext.SaveChangesAsync();
     }
 
-    [HttpDelete("{id}")]
-    public async Task DeletePerson(int id)
+    [HttpPut]
+    public async Task PutPersons([FromBody] Person[] person)
     {
-        var item = await _dbContext.Persons.FirstOrDefaultAsync(p => p.Id == id);
-        if (item == null) return;
+        foreach (var p in person)
+        {
+            await _dbContext.Persons.Where(x => x.Id == p.Id)
+                .ExecuteUpdateAsync(s => s.SetProperty(u => u.FirstName, u => p.FirstName));
+        }
 
-        _dbContext.Persons.Remove(item);
         await _dbContext.SaveChangesAsync();
     }
-
-    // [HttpPut]
-    // public async Task PutPersons(Person[] person)
-    // {
-    //     foreach (var p in person)
-    //     {
-    //         await _dbContext.Persons.
-    //     }
-    // }
 }
 

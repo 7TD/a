@@ -20,9 +20,11 @@ export class PersonApi {
         await axios.post(`${this.apiUrl}/delete`, ids);
     }
 
-    // getPersonById(id: number) {
-    //     return axios.get<PersonInfo>(`${this.apiUrl}/${id}`);
-    // }
+    async putPersons(persons: PersonInfo[]) {
+        await axios.put(this.apiUrl, persons);
+    }
+
+
 }
 
 

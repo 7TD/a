@@ -35,6 +35,12 @@ export const TestPage = () => {
         getPerson();
     }, []);
 
+    // Обновление
+    async function putPersons() {
+        await new PersonApi().putPersons(addPerson);
+        getPerson();
+    }
+
     // Удаление
     async function detelePersons() {
         let ids: number[] =[];
@@ -57,13 +63,12 @@ export const TestPage = () => {
             <div className={styles.bg}>
                 <div className={styles.Left}>
                     <button onClick={addPersons} className={styles.BtnGreen}>Добавить</button>
-                    <button className={styles.BtnBlue}>Изменить</button>
+                    <button onClick={putPersons} className={styles.BtnBlue}>Изменить</button>
                     <button onClick={detelePersons} className={styles.BtnRed}>Удалить</button>
                     <button onClick={getPersonById} className={styles.BtnGreen}>Получить</button>
                     <button onClick={getPerson} className={styles.BtnGreen}>Получить все</button>
                 </div>
                 <div className={styles.Middle}>
-
                     {addPerson.map((person, index) => (
                         <Field
                             key={index}
@@ -72,10 +77,6 @@ export const TestPage = () => {
                             setPerson={setAddPerson}
                         />
                     ))}
-
-                    {/*Демонстрация диномических управляемых инпутов (удалить)*/}
-                    {/*{addPerson.map(person => (<p>Id: {person.id} Name: {person.firstName}</p>))}*/}
-
                     <svg onClick={addField} width="34" height="32" viewBox="0 0 34 32" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path
