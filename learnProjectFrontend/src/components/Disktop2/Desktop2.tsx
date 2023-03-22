@@ -1,3 +1,5 @@
+import ResecleCircleImage from '../../image/RefreshCicle.svg';
+import Triangle from '../../image/Triangle.svg';
 import {Header} from './Header/Header';
 import styles from './Desktop2.module.scss';
 
@@ -28,9 +30,14 @@ export const Desktop2 = () => {
                             <div className={styles.ListSelector}>
                                 <div className={styles.Image} />
                                 <div className={styles.Selector}>
+                                    <img className={styles.TriangleLeft} src={Triangle} alt="Triangle"/>
                                     <p>image-name.png</p>
+                                    <img className={styles.TriangleRight} src={Triangle} alt="Triangle"/>
                                 </div>
-                                <button>Update list</button>
+                                <button>
+                                    <img src={ResecleCircleImage} alt="Refresh cicle" />
+                                    Update list
+                                </button>
                             </div>
                         </div>
                     </div>
