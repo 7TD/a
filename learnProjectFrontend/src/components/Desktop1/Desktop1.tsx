@@ -1,12 +1,12 @@
 import styles from './Desktop1.module.scss';
-import Header from './Header/Header';
+import Headerr from './Header/Header';
 import Field from './Field/Field';
 
 function Desctop1() {
     return(
         <div className={styles.d1}>
             <div className={styles.d2}>
-                <Header />
+                <Headerr />
                 <div className={styles.content}>
                     <div className={styles.Head}>
                         <span>Questionnaire</span>
