@@ -1,8 +1,37 @@
-.field {
-  width: 450px;
-  height: 60px;
-  background: #4774E8;
-  border-radius: 8px;
-  margin: 0;
-  padding: 0;
+@import '../../../assets/variables';
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid $borderColorTestPage;
+
+  .field {
+    width: 380px;
+    height: 60px;
+    background: #4774E8;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 25px;
+  }
+  p {
+    padding: 20px 0 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: $textColor;
+  }
+  .field, p {
+    margin: 0 30px;
+  }
+  &:last-child {
+    border: none;
+  }
 }
+
+
+
+
+

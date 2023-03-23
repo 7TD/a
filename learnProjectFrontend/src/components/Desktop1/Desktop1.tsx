@@ -1,6 +1,6 @@
 import styles from './Desktop1.module.scss';
-import Header from "./Header/Header";
-import Field from "./Field/Field";
+import Header from './Header/Header';
+import Field from './Field/Field';
 
 function Desctop1() {
     return(

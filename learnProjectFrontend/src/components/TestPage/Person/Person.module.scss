@@ -1,7 +1,32 @@
-.person {
+@import '../../../assets/variables';
+
+.person, .personActive{
   width: 320px;
   height: 80px;
   box-sizing: border-box;
-  background: #708FDD;
-  border-bottom: 2px solid #000000;
+  background-color: $blueBg;
+  border-bottom: 2px solid $borderColorTestPage;
+  cursor: pointer;
+
+  p {
+    margin: 0;
+    padding: 6px 0 0 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #282c34;
+  }
+  span {
+    font-size: 25px;
+    font-weight: 500;
+    color: #282c34;
+    position: center;
+  }
+  &:last-child {
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+.personActive {
+  background-color: #3768de;
 }

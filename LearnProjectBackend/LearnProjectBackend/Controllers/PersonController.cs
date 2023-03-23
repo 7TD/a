@@ -16,37 +16,50 @@ public class PersonController : Controller
     }
     
     [HttpPost("person")]
-    public async Task AddPerson([FromBody] string name)
+    public async Task AddPerson([FromBody] string[] name)
     {
-        await _dbContext.Persons.AddAsync(new Person
+        foreach (var firstName in name)
         {
-            FirstName = name
-        });
+            await _dbContext.Persons.AddAsync(new Person
+            {
+                FirstName = firstName
+            });
+        }
         await _dbContext.SaveChangesAsync();
     }
 
-    [HttpGet("{id}")]
-    public async Task<Person?> GetPerson(int id)
-    {
-        var item = await _dbContext.Persons.FirstOrDefaultAsync(p=> p.Id == id);
+    [HttpPost]
+     public async Task<List<Person>> GetPersons([FromBody] int[] Ids)
+     {
+         return await _dbContext.Persons.Where(x => Ids.Contains(x.Id)).ToListAsync();
+     }
 
-        return item;
-    }
-
-    [HttpGet]
+     [HttpGet]
     public async Task<List<Person>> GetAllPersons()
     {
-        return await _dbContext.Persons.Select(x => x).ToListAsync();
+        return await _dbContext.Persons.ToListAsync();
     }
 
-    [HttpDelete("{id}")]
-    public async Task DeletePersons(int id)
+    [HttpPost("delete")]
+    public async Task DeletePersons([FromBody] int[] ids)
     {
-        var item = await _dbContext.Persons.FirstOrDefaultAsync(p => p.Id == id);
-        if (item == null) return;
+        foreach (var id in ids)
+        {
+            var item = await _dbContext.Persons.FirstOrDefaultAsync(p => p.Id == id);
+            _dbContext.Persons.Remove(item);
+        }
 
-        _dbContext.Persons.Remove(item);
         await _dbContext.SaveChangesAsync();
+    }
+
+    [HttpPut]
+    public async Task PutPersons([FromBody] Person[] person)
+    {
+        foreach (var p in person)
+        {
+            await _dbContext.Persons.Where(x => x.Id == p.Id)
+                .ExecuteUpdateAsync(s => s.SetProperty(u => u.FirstName, u => p.FirstName));
+        }
     }
 }
 

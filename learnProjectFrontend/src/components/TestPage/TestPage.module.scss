@@ -1,40 +1,86 @@
-.BtnGreen {
-  background-color: #4DAF5C;
-}
-.BtnRed {
-  background-color: #DA4D2E;
-}
-.BtnBlue {
-  background-color: #5B81E2;
-}
-.dd {
+@import "src/assets/variables";
+
+body {
   background-color: #353535;
-  height: 100vh;
+}
+
+.dd {
+  height: 95vh;
+  .BtnGreen {
+    background-color: #4DAF5C;
+  }
+  .BtnRed {
+    background-color: #DA4D2E;
+  }
+  .BtnBlue {
+    background-color: #5B81E2;
+  }
 }
 .bg {
-  position: absolute;
   display: flex;
+  justify-content: space-around;
+  //@include d-flex-u(start, space-around);
   max-width: 1270px;
+  height: 95%;
   background-color: #ccc;
-  margin: 60px auto;
+  margin: 2%  auto;
   border-radius: 0 35px;
   border: 6px solid #6376D8;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.71);
 }
 .Left {
   display: flex;
   flex-direction: column;
-  overflow: auto;
+  padding-top: 50px;
 
   button {
     width: 250px;
     height: 50px;
+    margin: 11px 10px;
     border: none;
     border-radius: 25px;
+    font-size: 20px;
+    transition: transform 0.2s ease-in-out;
     cursor: pointer;
-    margin: 11px 40px;
 
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+.Middle {
+  width: 440px;
+  overflow: auto;
+  background-color: #fff;
+
+  img {
+    display: block;
+    cursor: pointer;
+    margin: 50px auto;
   }
 }
 .Right {
   overflow: auto;
+  width: 320px;
+}
+
+.Middle::-webkit-scrollbar {
+  width: 20px;               /* ширина scrollbar */
+}
+.Middle::-webkit-scrollbar-track {
+  background: #D9D9D9;        /* цвет дорожки */
+}
+.Middle::-webkit-scrollbar-thumb {
+  background-color: #605656;    /* цвет плашки */
+}
+
+
+.Right::-webkit-scrollbar {
+  width: 20px;               /* ширина scrollbar */
+}
+.Right::-webkit-scrollbar-track {
+  background: #D9D9D9;        /* цвет дорожки */
+}
+.Right::-webkit-scrollbar-thumb {
+  background-color: #605656;    /* цвет плашки */
 }

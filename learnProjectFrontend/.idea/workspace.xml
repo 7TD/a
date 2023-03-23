@@ -5,32 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f470261d-dada-448d-bcdd-2edcfe714aad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TestPage/Person/EmptyPerson.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LearnProjectBackend/.idea/.idea.LearnProjectBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnProjectBackend/.idea/.idea.LearnProjectBackend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LearnProjectBackend/LearnProjectBackend/Controllers/PersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../LearnProjectBackend/LearnProjectBackend/Controllers/PersonController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/10.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/11.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/12.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/13.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/14.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/3.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/4.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/5.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/6.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/7.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/8.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/9.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/personRequest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/personRequest.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Desktop1/Desktop1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Desktop1/Desktop1.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Desktop1/Field/Field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Desktop1/Field/Field.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostGet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostGet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestPage/Fields/Fields.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestPage/Fields/Fields.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestPage/Person/Person.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestPage/Person/Person.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestPage/TestPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestPage/TestPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/IPerson.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/PersonInfo.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -50,6 +49,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/MyProjects/learnreact/learnProjectFrontend&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -62,6 +62,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyProjects\learnreact\learnProjectFrontend\src\components" />
       <recent name="D:\MyProjects\learnreact\learnProjectFrontend\src\components\Desktop1" />
     </key>
   </component>
@@ -81,6 +82,12 @@
       <workItem from="1678732203325" duration="7741000" />
       <workItem from="1678788479926" duration="7825000" />
       <workItem from="1678885074342" duration="3075000" />
+      <workItem from="1678956127072" duration="4510000" />
+      <workItem from="1679038320396" duration="18949000" />
+      <workItem from="1679126959530" duration="9129000" />
+      <workItem from="1679213865090" duration="14834000" />
+      <workItem from="1679268989610" duration="4210000" />
+      <workItem from="1679315640804" duration="2280000" />
     </task>
     <servers />
   </component>
