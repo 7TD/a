@@ -1,4 +1,4 @@
-@import "assets/variables";
+@import "src/assets/variables";
 
 body {
   background-color: #353535;
@@ -53,7 +53,7 @@ body {
   overflow: auto;
   background-color: #fff;
 
-  svg {
+  img {
     display: block;
     cursor: pointer;
     margin: 50px auto;
