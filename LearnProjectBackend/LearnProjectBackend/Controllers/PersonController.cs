@@ -60,8 +60,6 @@ public class PersonController : Controller
             await _dbContext.Persons.Where(x => x.Id == p.Id)
                 .ExecuteUpdateAsync(s => s.SetProperty(u => u.FirstName, u => p.FirstName));
         }
-
-        await _dbContext.SaveChangesAsync();
     }
 }
 
