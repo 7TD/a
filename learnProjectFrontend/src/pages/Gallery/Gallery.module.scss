@@ -112,23 +112,84 @@
     span {
       font-size: 30px;
     }
+    &Push {
+      button {
+        border: none;
+        border-radius: 20px;
+        width: 380px;
+        height: 45px;
+        background-color: #66A3EB;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: transform 0.2s ease-in-out;
 
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+        }
+
+      }
+    }
     .TitleImageBtns {
       display: flex;
       flex-direction: row;
       gap: 20px;
+
+
+      label {
+        position: relative;
+        display: inline-block;
+
+        input {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+          display: block;
+          width: 0;
+          height: 0;
+        }
+        span {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          outline: none;
+          text-decoration: none;
+          vertical-align: middle;
+          color: white;
+          text-align: center;
+          background-color: #66A3EB;
+          line-height: 22px;
+          width: 180px;
+          height: 45px;
+          border-radius: 20px;
+          padding: 10px 20px;
+          box-sizing: border-box;
+          border: none;
+          margin: 0;
+          font-size: 18px;
+          font-weight: 400;
+          transition: transform 0.2s ease-in-out;
+
+          &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+          }
+        }
+      }
 
       button {
         width: 180px;
         height: 45px;
         border: none;
         border-radius: 20px;
-        font-size: 15px;
         cursor: pointer;
         font-size: 18px;
         font-weight: 400;
         color: #ffffff;
         transition: transform 0.2s ease-in-out;
+        background-color: #E63434;
 
         &:hover {
           transform: scale(1.05);
@@ -142,17 +203,17 @@
       height: 320px;
       background-color: #CAC3C3;
       border-radius: 10px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      img {
+        width: 380px;
+        max-height: 320px;
+      }
 
     }
   }
-}
-
-.BlueBtn {
-  background-color: #66A3EB;
-}
-
-.ReadBtn {
-  background-color: #E63434;
 }
 .head {
   border-bottom: #fff 4px solid;
