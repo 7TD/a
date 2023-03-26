@@ -11,6 +11,7 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<Person> Persons { get; set; } = null!;
+    public DbSet<Image> Image { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
