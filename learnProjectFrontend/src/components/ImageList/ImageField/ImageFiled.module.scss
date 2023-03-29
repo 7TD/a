@@ -1,0 +1,12 @@
+.field {
+
+  &Disable, &Active {
+    margin: 0;
+    padding: 5px 0;
+    cursor: pointer;
+  }
+  &Active {
+    background-color: #726464;
+
+  }
+}

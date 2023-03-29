@@ -23,8 +23,6 @@ export class PersonApi {
     async putPersons(persons: PersonInfo[]) {
         await axios.put(this.apiUrl, persons);
     }
-
-
 }
 
 
